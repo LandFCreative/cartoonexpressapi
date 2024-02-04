@@ -1,9 +1,9 @@
 # Introduction
 
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so users can sign up, customize & personalize the app 
+A Simple Cartoon Dog Api built using minimal code to connect to a database to store, change and delete enteries. 
 
 
-<img src="./public/TodoMVC.png" width=70%/>
+<img src="./cartoonapi.png" width=70%/>
 ---
 
 

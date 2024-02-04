@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Dogs API 2.0</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Dogs API 2.0</title>
+</head>
+<body>
+    <div class ="header">
+        <h1>Cartoon Dogs</h1>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src ="https://www.puppybandana.co.uk/wp-content/uploads/2012/12/santas-little-helper-the-simpsons.jpg">
+    
+        </div>
+        <div class ="cdoglist">
+            <ul class="cartoondogs">
+                <% for(let i=0; i < info.length; i++) {%>
+                    <li class="listdogs">
+                        <span><%= info[i].cartoonName %>:   </span>
+                        <span><%= info[i].showName %></span>
+                        <span><%= info[i].likes %></span>
+                        <span class='fa fa-thumbs-up'></span>
+                        <span class='fa fa-trash'></span>
+                    </li>
+                <% } %>
+                </ul>
+        </div>
+
+    </div>
+   
+    <div class ="form">
+   
+        <h3>Add A Cartoon:</h3>
+
+    <form action="/addCartoon" method="POST">
+        <input type="text" placeholder= "Cartoon Name" name="cartoonName">
+        <input type="text" placeholder= "Show Name" name= "showName">
+        <input type="submit">
+    </form>
+</div>
+
+    
+    <script src='js/main.js'></script>
+</body>
+</html>

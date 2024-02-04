@@ -1,0 +1,49 @@
+body { 
+    margin: 6%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px black solid;
+    padding: 20px;
+    width: 50vw;
+    /* height: 100vh; */
+}
+
+img {
+    /* border: 1px red solid; */
+    transform: scaleX(-1);
+    width: 70%;
+}
+
+
+.header{
+    text-align: center;   
+    color: navy;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+
+    width:fit-content;
+    height: 75%;
+    object-fit: contain;
+    border: 1px black solid;
+    box-shadow: 10px 5px 5px rgb(75, 71, 71);
+    padding: 15px;
+}
+
+
+
+.cdoglist{
+    /* border: 1px red solid; */
+    width: 80%;
+    padding-left: 30px;
+}
+
+.form {
+    margin-top: 5%;
+    color: navy;
+    /* text-align: center; */
+}
